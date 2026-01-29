@@ -1,8 +1,18 @@
  <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>تفعيل إشعارات المدرسة</title>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId:"67c377ae-7d32-4d60-b016-xxxxxxxx"",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
 </head>
 <body style="font-family: Arial; text-align: center; margin-top: 80px;">
   <h1>🔔 فعّل إشعارات المدرسة</h1>
